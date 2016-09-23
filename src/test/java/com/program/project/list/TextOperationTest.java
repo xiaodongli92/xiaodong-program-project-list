@@ -17,4 +17,12 @@ public class TextOperationTest {
         System.out.println(result);
         Assert.assertEquals("串符字转逆",result);
     }
+
+    @Test
+    public void latinPigTest() throws Exception {
+        String testStr = "three";
+        String result = TextOperation.latinPig(testStr);
+        System.out.println(result);
+        Assert.assertEquals("ee-thray", result);
+    }
 }
